@@ -1,0 +1,50 @@
+{
+  "name": "hello",
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "keywords": [
+    "qlik",
+    "nebula",
+    "stardust"
+  ],
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "main": "dist/hello.js",
+  "module": "dist/hello.esm.js",
+  "scripts": {
+    "build": "nebula build",
+    "lint": "eslint src",
+    "start": "nebula serve",
+    "sense": "nebula sense",
+    "test:integration": "aw puppet --testExt '*.int.js' --glob 'test/integration/**/*.int.js'"
+  },
+  "devDependencies": {
+    "@after-work.js/aw": "6.0.10",
+    "@nebula.js/cli": "1.1.0",
+    "@nebula.js/cli-build": "1.1.0",
+    "@nebula.js/cli-serve": "1.1.0",
+    "@nebula.js/cli-sense": "1.1.0",
+    "eslint": "5.12.1",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.15.0",
+    "eslint-plugin-mocha": "5.2.1"
+  },
+  "peerDependencies": {
+    "@nebula.js/stardust": "^1.x"
+  },
+  "dependencies": {
+    "d3": "^6.5.0",
+    "ify-loader": "^1.1.0",
+    "plotly.js": "^1.47.4",
+    "plotly.js-dist": "^2.6.0"
+  }
+}
